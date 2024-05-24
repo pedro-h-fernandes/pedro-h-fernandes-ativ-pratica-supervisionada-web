@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'Shrek';
+    src: url('//fonts/SHREK___.TTF');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+}
+nav img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+    animation: spin 2s linear infinite;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    padding: 2%;
+}
+
+nav ul li {
+    list-style: none;
+    font: 300 1.2em 'Arial';
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+}
+
+a:hover {
+    color: #7FFF00;
+    background-color: #ffffffbd;
+    transition: 0.5s;
+}
+
+/* Reset default styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color */
+body {
+    background-image: url('/imgs/pantano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    overflow-x: hidden;
+    /* Shrek green */
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Center content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style heading */
+h1 {
+    font-family: "Lilita One";
+    font-size: 48px;
+    color: #FFD700;
+    /* Shrek gold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style paragraph */
+p {
+    font-family: "Lilita One";
+    font-size: 24px;
+    color: #FFFFFF;
+    /* Shrek white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.filme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+.filme img {
+    width: 200px;
+    margin: 2%;
+}
+
+#movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#movies table {
+    width: 60%;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+
+
+    border-radius: 50px;
+    background-color: aliceblue;
+}
+
+tr {
+    width: 100%;
+}
+
+td,
+th {
+    font-family: "Lilita One";
+}
+
+#jumpscare {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/*entre em contato*/
+#contact {
+    background-color: aliceblue;
+    align-items: center;
+    padding: 50px;
+    border-radius: 50px;
+    margin: 0% 19.5% 5%;
+    text-align: center;
+    font-family: "Arial";
+    font-weight: bolder;
+
+}
+
+#contact h2 {
+    font-family: "Lilita One";
+    font-size: 45px;
+    font-weight: 900px;
+}
+
+#contact h2 span {
+    font-size: 45px;
+    font-weight: 900px;
+    color: green;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #56dc73;
+    outline: none;
+    box-shadow: 0 0 8px #56dc73;
+}
+
+input.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #03b300;
+    background-color: #ffffff;
+    border-color: #03b300;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+input.button:hover {
+    background-color: #03b300;
+    color: white;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 0 20px;
+    border-top: 1px solid #ccc;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Arial";
+
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    font-family: "Arial";
+
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Arial";
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 14px;
+    color: #171717;
+    font-family: "Arial";
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #03b300;
+    transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+    color: #56dc73;
+}
+
+.footer-section .social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-section .social a img {
+    width: 12px;
+    height: 24px;
+    transition: 0.2s;
+}
+
+.footer-section .social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #5dd00b;
+    margin: 0;
+}
+
+.sliders {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-container {
+    width: 60%;
+    margin: 2% 0 2% 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.slide {
+    display: none;
+    width: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+/* Estilos CSS para os botões de controle */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px;
+    
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    z-index: 1;
+}
+
+.prev {
+    border-radius: 0 30px 30px 0;
+    left: 0;
+}
+
+.next {
+    border-radius: 30px 0 0 30px;
+    right: 0;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+
+@keyframes spin {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(700px) translateY(700px);
+    }
+
+    100%{
+        transform: scale(6);
+    }
+}

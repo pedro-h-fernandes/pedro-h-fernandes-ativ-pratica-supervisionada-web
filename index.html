@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lilita+One&display=swap");
+    </style>
+
+    <title>Shrek</title>
+  </head>
+  <body>
+    <nav>
+      <img src="imgs/shrek-head.png" alt="" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Filmes</a></li>
+        <li><a href="#characters">Personagens</a></li>
+        <li><a href="#contact">Contatar Shrek</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1>BEM VINDO AO WEBSITE DO SHREK</h1>
+      <p>Aqui voce pode encontrar informações sobre os filmes.</p>
+    </section>
+
+    <section id="movies">
+      <h2>Filmes</h2>
+      <table>
+        <tr>
+          <th>Titulo</th>
+          <th>Ano de lançamento</th>
+        </tr>
+        <tr>
+          <td class="filme">
+            Shrek
+            <img src="imgs/shrek1.jpg" alt="" />
+          </td>
+          <td>2001</td>
+        </tr>
+        <tr>
+          <td class="filme">
+            Shrek 2
+            <img src="imgs/shrek2.jpg" alt="" />
+          </td>
+          <td>2004</td>
+        </tr>
+        <tr>
+          <td class="filme">
+            Shrek Terceiro
+            <img src="imgs/shrek3.jpg" alt="" />
+          </td>
+          <td>2007</td>
+        </tr>
+        <tr>
+          <td class="filme">
+            Shrek Para Sempre
+            <img src="imgs/shrek3.jpg" alt="" />
+          </td>
+          <td>2010</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="sliders">
+      <div class="slider-container">
+          <div class="slide">
+              <img src="/imgs/1.png" alt="Imagem 1">
+          </div>
+          <div class="slide">
+              <img src="/imgs/2.png" alt="Imagem 2">
+          </div>
+          <div class="slide">
+              <img src="/imgs/3.png" alt="Imagem 3">
+          </div>
+      
+          <!-- Botões de controle -->
+          <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+          <div class="next" onclick="plusSlides(1)">&#10095;</div>
+      </div>
+  </section>
+  
+    <section id="contact">
+      <h2>CONTATE O <span>SHREK</span></h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br />
+
+        <input class="button" type="submit" value="Submit" />
+        
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section about">
+              <h2>Sobre o shereke</h2>
+              <p>Sou um ator de filmes infantis que misturam um monte de coisas</p>
+          </div>
+          
+          <div class="footer-section contact">
+              <h2>Contato</h2>
+              <p>Email: SHEREKE@exemplo.com</p>
+              <p>Telefone: (66) 6666-6666</p>
+          </div>
+          <!-- <div class="footer-section social">
+              <h2>Redes Sociais</h2>
+              <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="imgs/whatsapp.png" alt="whatsapp"></a>
+              <a href="https://www.instagram.com/officiallyshrek/"><img src="imgs/instagram.png" alt="Instagram"></a>
+          </div> -->
+      </div>
+      <div class="footer-bottom">
+          <p>© 2024 SHEREKE. Todos os direitos reservados.</p>
+      </div>
+  </footer>
+  </body>
+</html>
